@@ -63,7 +63,7 @@ class _List_pageState extends State<List_page> {
             ),
           );
         } else {
-          return CircularProgressIndicator();
+          return const Center(child: CircularProgressIndicator());
         }
       },
     ));

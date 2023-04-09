@@ -31,7 +31,7 @@ class _Add_quotes_pageState extends State<Add_quotes_page> {
                                 global.fav.remove(e);
                               });
                             },
-                            icon: Icon(Icons.remove_circle_outline),
+                            icon: const Icon(Icons.remove_circle_outline),
                           ),
                         ),
                       ))

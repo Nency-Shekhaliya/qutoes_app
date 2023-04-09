@@ -15,7 +15,7 @@ class _Home_pageState extends State<Home_page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Quotes",
           style: TextStyle(color: Colors.white),
         ),
@@ -24,10 +24,10 @@ class _Home_pageState extends State<Home_page> {
         actions: [
           IconButton(
               onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Add_quotes_page()));
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const Add_quotes_page()));
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.favorite,
                 color: Colors.white,
               ))
@@ -55,10 +55,10 @@ class _Home_pageState extends State<Home_page> {
     return GestureDetector(
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => List_page()));
+            .push(MaterialPageRoute(builder: (context) => const List_page()));
       },
       child: Container(
-        margin: EdgeInsets.all(5),
+        margin: const EdgeInsets.all(5),
         height: 170,
         width: 340,
         decoration: BoxDecoration(

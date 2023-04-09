@@ -33,7 +33,7 @@ class DBhelper {
     return image;
   }
 
-  Future Fetchbg() async {
+  Future<List> Fetchbg() async {
     String Query = "SELECT * FROM Quotes;";
     List q = await db!.rawQuery(Query);
     List bg = global.background;
